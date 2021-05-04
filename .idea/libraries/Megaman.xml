@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Megaman">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/Megaman.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
