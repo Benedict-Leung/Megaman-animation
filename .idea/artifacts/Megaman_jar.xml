@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Megaman:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Megaman_jar</output-path>
+    <root id="archive" name="Megaman.jar">
+      <element id="module-output" name="Megaman" />
+    </root>
+  </artifact>
+</component>
