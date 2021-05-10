@@ -2,6 +2,7 @@ import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
 import javax.swing.event.*;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Hashtable;
 
@@ -57,8 +58,8 @@ public class Sprites4 extends JPanel {
     @Override
     public void paintComponent(Graphics g) {	//Paints/draws the background, megaman and bullets
         this.requestFocusInWindow();
-        ImageIcon background = new ImageIcon("background.gif");
-        ImageIcon megaman = new ImageIcon("Megaman//" + picNumber + ".png");
+        ImageIcon background = new ImageIcon(getClass().getResource("background.gif"));
+        ImageIcon megaman = new ImageIcon(getClass().getResource("Megaman/" + picNumber + ".png"));
         background.paintIcon(this, g, 0, 0);
         megaman.paintIcon(this, g, megamanX, megamanY);
         c.drawLeft(g);
