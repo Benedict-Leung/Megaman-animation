@@ -202,8 +202,8 @@ public class Sprites4 extends JPanel {
         private double x;
         private final double y;
         private int shotNumberLeft = 3, shotNumberRight = 0;
-        private Image bulletRight = new ImageIcon("Megaman//Shots//" + shotNumberRight + ".png").getImage();
-        private Image bulletLeft = new ImageIcon("Megaman//Shots//" + shotNumberLeft + ".png").getImage();
+        private Image bulletRight = new ImageIcon(getClass().getResource("Megaman/Shots/" + shotNumberRight + ".png")).getImage();
+        private Image bulletLeft = new ImageIcon(getClass().getResource("Megaman/Shots/" + shotNumberLeft + ".png")).getImage();
 
         //Bullet constructor: To set the bullet's coordinates
         public Bullet(double x, double y) {
@@ -214,7 +214,7 @@ public class Sprites4 extends JPanel {
         //Move bullet to the right or left
         public void moveRight() {
             x += 20;
-            bulletRight = new ImageIcon("Megaman//Shots//" + shotNumberRight + ".png").getImage();
+            bulletRight = new ImageIcon(getClass().getResource("Megaman/Shots/" + shotNumberRight + ".png")).getImage();
             shotNumberRight++;
             if (shotNumberRight == 3) {
                 shotNumberRight = 0;
@@ -223,7 +223,7 @@ public class Sprites4 extends JPanel {
 
         public void moveLeft() {
             x -= 20;
-            bulletLeft = new ImageIcon("Megaman//Shots//" + shotNumberLeft + ".png").getImage();
+            bulletLeft = new ImageIcon(getClass().getResource("Megaman/Shots/" + shotNumberLeft + ".png")).getImage();
             shotNumberLeft++;
             if (shotNumberLeft == 6) {
                 shotNumberLeft = 3;
